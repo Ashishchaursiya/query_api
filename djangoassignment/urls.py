@@ -18,7 +18,7 @@ from django.urls import path
 from rest_framework.authtoken.views import obtain_auth_token
 from myapi import views
 urlpatterns = [
-     
+    path('', views.Info, name='info'),
     path('Getquestions/', views.Getquestion, name='allquestions'),
     path('Createquestion/', views.CreatQuestion, name='createQuestion'),
     path('Getanswers/', views.AnsViews, name='createQuestion'),

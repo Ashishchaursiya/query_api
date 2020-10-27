@@ -9,7 +9,10 @@ from .serializers import QuesSerializer,AnsSerializer
 
 
  
-
+#home
+@api_view(['GET'])
+def Info(request):
+    return Response({"info":"welcome to question answer api"},status=status.HTTP_200_OK)
  
 #This is Getquestions/ route only register user can see the question 
 @api_view(['GET'])
